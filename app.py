@@ -7,6 +7,7 @@ messages = ['Kinoko is wonderful!', 'Takenoko is awesome!']
 @app.route('/')
 def top():
     return render_template('index.html', **vars())
+import re
 
 @app.route('/vote', methods=['POST'])
 def answer():
